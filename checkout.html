@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body class=dark>
+    <div><h1>Paypal take home assignment:  </h1>
+        <div class='text basicPanel'>
+        1.  Instructions - Create a sample PayPal Integration that allows a user to purchase a product making use of Express Checkout through Braintree SDK. </div>
+ </div>
+ <form id='fakeLoginForm' name='form1' class='text basicPanel'>
+    <label><div class=text>2.  Get client token.  This is the token associated with a sandbox business account (the receiver of payments).
+    When this item is recieved from the server, the paypal button will appear.</div></label>
+ <input type="button" class="button" value="Get Access Token" onclick='handleLogin()'/> 
+  <div id=progress class='progressText hidden'>In progress.....please wait.</div>
+</form>
+<div class='basicPanel text'>
+    <div>3.  Payment button - will appear when client token is recieved from the server.  Be sure to login with a sandbox buyer account.</div>
+  <div id="paypal-button"></div>
+  <div id=progress2 class='progressText2 hidden'>In progress.... please wait.</div>
+</div>
+<!-- Load the required components. -->
+<script src="https://js.braintreegateway.com/web/3.25.0/js/client.min.js"></script>
+<script src="https://js.braintreegateway.com/web/3.25.0/js/paypal-checkout.min.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+    <!--script src="https://www.paypalobjects.com/api/checkout.js"></script-->
+    <script src="checkoutSample.js"></script>
+</body>
+
