@@ -1,2 +1,2 @@
 # paypalTakeHomeAssignment
-for the PayPal interview
+for the PayPal hiring process
